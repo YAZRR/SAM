@@ -1,44 +1,4 @@
-import requests
-import random
-import os
-import uuid
-import json
-import user_agent
-import time
-import sys
-import socket
-import datetime
 
-from datetime import date
-from time import sleep
-from user_agent import generate_user_agent
-from uuid import uuid4
-from os import system
-
-def chk():
-    uuid = str(os.geteuid()) + str(os.getlogin())
-    id = "-".join(uuid)
-    print("   \x1b[1;38;5;121m[𝗬𝗢𝗨𝗥 𝗞𝗘𝗬]-[ ﺹﺎﺨﻟﺍ ﻚﺣﺎﺘﻔﻣ ] : " + id)
-    try:
-        httpChat = requests.get("https://raw.githubusercontent.com/YASRR/FLX/main/sam.txt").text
-        if id in httpChat:
-            print("   \x1b[38;5;161mﻙﺮﺘﺸﻣ ﺖﻧﺍ ﺕﺭﻮﻧ VIP")
-            msg = str(os.geteuid())
-            time.sleep(1)
-            pass
-        else:
-            print("   \x1b[1;93m ﺔﻋﻮﻓﺪﻣ ﺎﻬﻧﻻ ﺓﺍﺩﺍ ﻞﺑ ﻙﺍﺮﺘﺷﻻﺍ ﻚﻴﻠﻋ")
-            print("   \x1b[38;5;208mﻦﻳﺭﻮﻄﻤﻟﺍ ﻰﻟﺍ ﻪﻟﺎﺳﺭﺎﺑ ﻢﻗ ﻞﻌﻔﻣ ﺮﻴﻏ ﻚﺣﺎﺘﻔﻣ [@R_A_J_Y-@K_L_D")
-            time.sleep(1)
-            sys.exit()
-    except Exception as e:
-        print("\033[1;30mﻑﻭﺮﻌﻣ ﺮﻴﻏ ﺎﻣ ﺎﻄﺧ: ", e)
-        sys.exit()
-
-if name == 'xdZwuHHS':
-    for _ in range(3):
-        chk()
-chk()
 import os
 import requests
 import time
