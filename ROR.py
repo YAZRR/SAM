@@ -34,10 +34,9 @@ def chk():
     except Exception as e:
         print("\033[1;30mخطا غير معرّوف: ", e)
         sys.exit()
-
-if name == 'xdZwuHHS':
-    for _ in range(3):
-        
+        if name == 'xdZwuHHS':
+         for _ in range(3):
+          chk()
 chk()
 import os
 import requests
