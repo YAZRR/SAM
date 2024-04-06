@@ -37,7 +37,7 @@ def chk():
 
 if name == 'xdZwuHHS':
     for _ in range(3):
-        chk()
+        
 chk()
 import os
 import requests
