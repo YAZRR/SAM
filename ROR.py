@@ -243,19 +243,7 @@ princp=[]
 cokbrut=[]
 ses=requests.Session()
 princp=[]
-import requests
 
-url = "http://api.scraperapi.com?api_key=eee4ac692be71e520ca4fdc5dacbd6f2&url=http://httpbin.org/ip"
-
-try:
-    prox = requests.get(url).text
-    open('.prox.txt', 'w').write(prox) 
-except Exception as e:
-    print('\x1b[1;91mError: \x1b[96m{}'.format(e))
-
-prox = open('.prox.txt', 'r').read().splitlines()
-#--------------------[ CONVERTER-BULAN ]--------------#
-#LOGO
 #--------------------[ CONVERTER-BULAN ]--------------#
 def clear():
         os.system('clear')
